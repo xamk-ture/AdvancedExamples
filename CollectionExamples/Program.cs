@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
+            //you can run each method individually to see the output
+            //if you do not want to run a method, comment it out
             WhereExample();
             WhereExample2();
             OrderByExample();

@@ -15,7 +15,6 @@ namespace InheritanceExample
         {
             Name = name;
             Age = age;
- 
         }
 
         public virtual void Eat()
