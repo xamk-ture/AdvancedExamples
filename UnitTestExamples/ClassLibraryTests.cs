@@ -2,8 +2,9 @@ using ClassLibrary;
 
 namespace UnitTestExamples
 {
-    public class ClassLibaryTests
+    public class ClassLibraryTests
     {
+        //WordCounterTest() ja WordCounterNullTest() testit ovat esimerkkejä, jos testit tehätisiin ilman InlineDataa
         [Fact]
         public void WordCounterTest()
         {
@@ -30,6 +31,7 @@ namespace UnitTestExamples
             Assert.Null(wordCount);
         }
 
+        //Koska WordCounterTheoryTest on parametrisoitu, voidaan hyödyntää InLindeData-attributea ja mitään erillisiä testejä eri skenaarioille ei tarvita
         [Theory]
         [InlineData("Hello, World!", 2)]
         [InlineData(null, null)]
@@ -45,6 +47,7 @@ namespace UnitTestExamples
             Assert.Equal(expected, wordCount);
         }
 
+        //Testataan extension methodia
         [Theory]
         [InlineData("Hello, World!", 2)]
         [InlineData(null, null)]

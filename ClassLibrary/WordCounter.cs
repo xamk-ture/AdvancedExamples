@@ -2,6 +2,12 @@
 {
     public class WordCounter
     {
+
+        /// <summary>
+        /// Counts the number of words in a string
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public int? CountWords(string input)
         {
             if(string.IsNullOrWhiteSpace(input))
