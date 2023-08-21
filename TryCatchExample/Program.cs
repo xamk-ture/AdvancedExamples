@@ -18,6 +18,7 @@
             catch (FormatException exception)
             {
                 // Tämä osio suoritetaan, jos yllä oleva koodi aiheuttaa FormatException-virheen.
+                //Huomaa, että Exception tyyppejä on useampi ja pyri käyttäämään relevanttia tyyppiä, jotta kerrot muille koodareille koodisi tarkoituksen paremmin
                 Console.WriteLine("Annettu syöte ei ollut kelvollinen kokonaisluku.");
 
                 //exception muuttujasta voidaan löytää tarkempi syy miksi ohjelma kaatui

@@ -30,6 +30,9 @@
             }
         }
 
+        /// <summary>
+        /// This example shows how to do the same thing as in WhereExample() but without using the Where method (what the where method does under the hood)
+        /// </summary>
         private static void WhereExample2()
         {
             Console.WriteLine("WhereExample2");
