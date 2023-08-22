@@ -9,6 +9,29 @@
             // Luetaan syöte käyttäjältä.
             string userInput = Console.ReadLine();
 
+            InvalidFormatExample(userInput);
+
+            Console.WriteLine("Paina nappia ja saat esimerkin nollalla jako virheestä");
+            Console.ReadLine();
+
+            DivideByZeroExceptionExample();
+        }
+
+        private static void DivideByZeroExceptionExample()
+        {
+            try
+            {
+                int number = 10;
+                int result = number / 0;  // Tämä aiheuttaa DivideByZeroException
+            }
+            catch (DivideByZeroException) //huomaa, että tässä ei ole exception muuttujaa, koska sitä ei käytetä, kuten InvalidFormatExample() metodissa
+            {
+                Console.WriteLine("Jakoa nollalla ei sallita.");
+            }
+        }
+
+        private static void InvalidFormatExample(string userInput)
+        {
             try
             {
                 // Yritetään muuttaa syöte kokonaisluvuksi.
